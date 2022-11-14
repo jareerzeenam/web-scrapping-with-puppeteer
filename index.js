@@ -7,10 +7,10 @@ async function run() {
   await page.goto('https://www.traversymedia.com/');
 
   // Takes Screenshot of the web page and saves as a PNG file (files/example.png)
-  //   await page.screenshot({ path: 'files/example.png', fullPage: true });
+  await page.screenshot({ path: 'files/example.png', fullPage: true });
 
   // Takes Screenshot of the web page and saves as a PDF file in A4 format (files/example.pdf)
-  //   await page.pdf({ path: 'files/example.pdf', format: 'A4' });
+  await page.pdf({ path: 'files/example.pdf', format: 'A4' });
 
   // Get entire HTML of the page
   //   const html = await page.content();
